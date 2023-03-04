@@ -2,6 +2,7 @@ import styled from "styled-components/macro";
 
 import Navbar from "./NavBar";
 import MainArticle from "./MainArticle";
+import Divider from "./Divider";
 
 const DATA = {
   mainArticle: {
@@ -31,7 +32,7 @@ export default function App() {
             <h3>Hydrogen VS Electric Cars</h3>
             <p>Will hydrogen-fueled cars ever catch up to EVs?</p>
           </NewArticle>
-          <Divider />
+          <Divider spacing={32} />
           <NewArticle>
             <h3>The Downsides of AI Artistry</h3>
             <p>
@@ -39,7 +40,7 @@ export default function App() {
               generation?
             </p>
           </NewArticle>
-          <Divider />
+          <Divider spacing={32} />
           <NewArticle>
             <h3>Is VC Funding Drying Up?</h3>
             <p>
@@ -119,13 +120,6 @@ const NewArticle = styled.article`
   p {
     color: var(--color-grayblue);
   }
-`;
-
-const Divider = styled.div`
-  height: 1px;
-  width: 100%;
-  background-color: var(--color-grayblue-dark);
-  margin-block: 32px;
 `;
 
 const TopArticlesWrapper = styled.section`
