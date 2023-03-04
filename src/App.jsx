@@ -14,7 +14,7 @@ export default function App() {
     <Wrapper>
       <Header>
         <BrandWrapper>
-          <img src="/images/logo.svg" alt="" />
+          <img src="./images/logo.svg" alt="" />
         </BrandWrapper>
         <Navbar />
       </Header>
