@@ -101,15 +101,15 @@ const NewArticlesWrapper = styled.section`
     font-size: 2.2rem;
     font-weight: var(--font-weight-bold);
     color: var(--color-primary);
+    padding-block: 1rem;
   }
 
   color: var(--color-white);
   background-color: var(--color-darkblue);
-  padding: 2rem 1.5rem;
+  padding: 1rem 1.5rem;
 `;
 
 const NewArticle = styled.article`
-  padding-block: 24px;
   h3 {
     font-size: 1.2rem;
     font-weight: var(--font-weight-bold);
@@ -125,6 +125,7 @@ const Divider = styled.div`
   height: 1px;
   width: 100%;
   background-color: var(--color-grayblue-dark);
+  margin-block: 32px;
 `;
 
 const TopArticlesWrapper = styled.section`
