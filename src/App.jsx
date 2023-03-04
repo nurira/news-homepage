@@ -68,7 +68,7 @@ export default function App() {
 }
 
 const Wrapper = styled.div`
-  max-width: 1080px;
+  max-width: 1240px;
   margin: 0 auto;
   padding-block: 89px;
 `;
@@ -88,7 +88,7 @@ const Main = styled.main`
     "main-article main-article new-stories"
     "top-stories top-stories top-stories";
   grid-template-columns: repeat(3, 1fr);
-  grid-column-gap: 2rem;
+  grid-column-gap: 34px;
   grid-row-gap: 72px;
 `;
 

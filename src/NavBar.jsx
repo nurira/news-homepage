@@ -29,7 +29,8 @@ const Wrapper = styled.nav``;
 const NavLinks = styled.ul`
   display: flex;
   justify-content: space-between;
-  gap: 40px;
+  font-size: 1.1rem;
+  gap: 45px;
   list-style-type: none;
 `;
 
