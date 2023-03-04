@@ -2,6 +2,7 @@ import styled from "styled-components/macro";
 
 import Navbar from "./NavBar";
 import MainArticle from "./MainArticle";
+import NewArticles from "./NewArticles";
 import Divider from "./Divider";
 
 const DATA = {
@@ -10,10 +11,26 @@ const DATA = {
     teaser: `We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people. But is it really fulfilling its promise?`,
     src: "/images/image-web-3-desktop.jpg",
   },
+  newArticles: [
+    {
+      title: "Hydrogen VS Electric Cars",
+      teaser: "Will hydrogen-fueled cars ever catch up to EVs?",
+    },
+    {
+      title: "The Downsides of AI Artistry",
+      teaser:
+        "What are the possible adverse effects of on-demand AI image generation?",
+    },
+    {
+      title: "Is VC Funding Drying Up?",
+      teaser:
+        "Private funding by VC firms is down 50% YOY. We take a look at what that means.",
+    },
+  ],
 };
 
 export default function App() {
-  const { mainArticle } = DATA;
+  const { mainArticle, newArticles } = DATA;
   return (
     <Wrapper>
       <Header>
@@ -26,29 +43,7 @@ export default function App() {
         <MainArticleWrapper>
           <MainArticle {...mainArticle} />
         </MainArticleWrapper>
-        <NewArticlesWrapper>
-          <h2>New</h2>
-          <NewArticle>
-            <h3>Hydrogen VS Electric Cars</h3>
-            <p>Will hydrogen-fueled cars ever catch up to EVs?</p>
-          </NewArticle>
-          <Divider spacing={32} />
-          <NewArticle>
-            <h3>The Downsides of AI Artistry</h3>
-            <p>
-              What are the possible adverse effects of on-demand AI image
-              generation?
-            </p>
-          </NewArticle>
-          <Divider spacing={32} />
-          <NewArticle>
-            <h3>Is VC Funding Drying Up?</h3>
-            <p>
-              Private funding by VC firms is down 50% YOY. We take a look at
-              what that means.
-            </p>
-          </NewArticle>
-        </NewArticlesWrapper>
+        <NewArticles articles={newArticles} />
         <TopArticlesWrapper>
           <TopArticle>
             <img src="/images/image-retro-pcs.jpg" alt="" />
@@ -95,31 +90,6 @@ const Main = styled.main`
 
 const MainArticleWrapper = styled.div`
   grid-area: main-article;
-`;
-
-const NewArticlesWrapper = styled.section`
-  h2 {
-    font-size: 2.2rem;
-    font-weight: var(--font-weight-bold);
-    color: var(--color-primary);
-    padding-block: 1rem;
-  }
-
-  color: var(--color-white);
-  background-color: var(--color-darkblue);
-  padding: 1rem 1.5rem;
-`;
-
-const NewArticle = styled.article`
-  h3 {
-    font-size: 1.2rem;
-    font-weight: var(--font-weight-bold);
-    margin-bottom: 1rem;
-  }
-
-  p {
-    color: var(--color-grayblue);
-  }
 `;
 
 const TopArticlesWrapper = styled.section`
