@@ -7,7 +7,7 @@ export default function MainArticle({ src, title, teaser }) {
       <Heading>{title}</Heading>
       <div>
         <Teaser>{teaser}</Teaser>
-        <button>READ MORE</button>
+        <Button>READ MORE</Button>
       </div>
     </Wrapper>
   );
@@ -32,4 +32,14 @@ const Heading = styled.h1`
 const Teaser = styled.p`
   line-height: 1.5;
   color: var(--color-grayblue-dark);
+`;
+
+const Button = styled.button`
+  background-color: var(--color-secondary);
+  color: var(--color-white);
+  border: none;
+  font-weight: var(--font-weight-bold);
+  padding: 16px 28px;
+  text-transform: uppercase;
+  letter-spacing: 5px;
 `;
