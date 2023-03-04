@@ -39,7 +39,8 @@ const NewArticle = styled.article`
   }
 
   p {
+    font-size: 1rem;
     color: var(--color-grayblue);
-    line-height: 2;
+    line-height: 1.6;
   }
 `;

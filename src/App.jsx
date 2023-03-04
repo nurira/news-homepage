@@ -50,7 +50,7 @@ const Main = styled.main`
     "main-article main-article new-stories"
     "top-stories top-stories top-stories";
   grid-template-columns: repeat(3, 1fr);
-  grid-column-gap: 34px;
+  grid-column-gap: 36px;
   grid-row-gap: 72px;
 `;
 

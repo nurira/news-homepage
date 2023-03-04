@@ -5,10 +5,10 @@ export default function MainArticle({ src, title, teaser }) {
     <Wrapper>
       <img src={src} />
       <Heading>{title}</Heading>
-      <div>
+      <Info>
         <Teaser>{teaser}</Teaser>
         <Button>READ MORE</Button>
-      </div>
+      </Info>
     </Wrapper>
   );
 }
@@ -16,8 +16,7 @@ export default function MainArticle({ src, title, teaser }) {
 const Wrapper = styled.article`
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-column-gap: 34px;
-  grid-row-gap: 40px;
+  grid-gap: 36px;
 
   img {
     grid-column: 1 / -1;
@@ -25,12 +24,20 @@ const Wrapper = styled.article`
 `;
 
 const Heading = styled.h1`
-  font-size: calc(56rem / 16);
+  font-size: calc(64rem / 16);
   font-weight: var(--font-weight-bolder);
   line-height: 1;
 `;
 
+const Info = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+`;
+
 const Teaser = styled.p`
+  font-size: 1.1rem;
   line-height: 1.5;
   color: var(--color-grayblue-dark);
 `;

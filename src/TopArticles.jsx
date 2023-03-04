@@ -22,7 +22,7 @@ const Wrapper = styled.section`
   justify-content: space-between;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-column-gap: 34px;
+  grid-column-gap: 36px;
 `;
 
 const TopArticle = styled.article`
