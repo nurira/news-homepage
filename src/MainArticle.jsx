@@ -16,6 +16,7 @@ export default function MainArticle({ src, title, teaser }) {
 const Wrapper = styled.article`
   display: grid;
   grid-template-columns: 1fr 1fr;
+  grid-column-gap: 34px;
   grid-row-gap: 40px;
 
   img {
