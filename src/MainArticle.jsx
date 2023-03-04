@@ -7,7 +7,9 @@ export default function MainArticle({ src, title, teaser }) {
       <Heading>{title}</Heading>
       <Info>
         <Teaser>{teaser}</Teaser>
-        <Button>READ MORE</Button>
+        <Button>
+          <a href="#">READ MORE</a>
+        </Button>
       </Info>
     </Wrapper>
   );
@@ -47,7 +49,18 @@ const Button = styled.button`
   color: var(--color-white);
   border: none;
   font-weight: var(--font-weight-bold);
-  padding: 16px 28px;
+
   text-transform: uppercase;
   letter-spacing: 5px;
+
+  a {
+    text-decoration: none;
+    display: block;
+    color: inherit;
+    padding: 16px 28px;
+
+    &:hover {
+      background-color: var(--color-darkblue);
+    }
+  }
 `;

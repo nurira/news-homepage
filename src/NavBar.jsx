@@ -38,5 +38,9 @@ const Link = styled.li`
   a {
     color: var(--color-grayblue-dark);
     text-decoration: none;
+
+    &:hover {
+      color: var(--color-secondary);
+    }
   }
 `;

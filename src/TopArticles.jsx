@@ -8,7 +8,9 @@ export default function TopArticles({ articles }) {
           <img src={src} alt="" />
           <div>
             <span>{`0${idx + 1}`}</span>
-            <h2>{title}</h2>
+            <h2>
+              <a href="#">{title}</a>
+            </h2>
             <p>{teaser}</p>
           </div>
         </TopArticle>
@@ -37,6 +39,15 @@ const TopArticle = styled.article`
     line-height: 2;
     font-size: 1.3rem;
     color: var(--color-darkblue);
+
+    a {
+      color: inherit;
+      text-decoration: none;
+
+      &:hover {
+        color: var(--color-secondary);
+      }
+    }
   }
 
   p {
