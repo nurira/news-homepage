@@ -2,7 +2,7 @@ export const DATA = {
   mainArticle: {
     title: "The Bright Future of Web 3.0?",
     teaser: `We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people. But is it really fulfilling its promise?`,
-    src: "/images/image-web-3-desktop.jpg",
+    src: "./images/image-web-3-desktop.jpg",
   },
   newArticles: [
     {
@@ -24,17 +24,17 @@ export const DATA = {
     {
       title: "Reviving Retro PCs",
       teaser: "What happens when old PCs are given modern upgrades?",
-      src: "/images/image-retro-pcs.jpg",
+      src: "./images/image-retro-pcs.jpg",
     },
     {
       title: "Top 10 Laptops of 2022",
       teaser: "Our best picks for various needs and budgets.",
-      src: "/images/image-top-laptops.jpg",
+      src: "./images/image-top-laptops.jpg",
     },
     {
       title: "The Growth of Gaming",
       teaser: "How the pandemic has sparked fresh opportunities.",
-      src: "/images/image-gaming-growth.jpg",
+      src: "./images/image-gaming-growth.jpg",
     },
   ],
 };
